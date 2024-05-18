@@ -10,9 +10,9 @@ import { Fade, Slide, Zoom } from "react-awesome-reveal"
 
 const Services = () => {
     const services = [
-        {id: 1, title: "Create Your Presence On Web", description: "With us you can make your web presence easily", image: "/src/assets/create.png"},
-        {id: 2, title: "Maintain And Update Your Site", description: "With us your site will be maintained and updated Always", image:"/src/assets/maintain.png"},
-        {id: 3, title: "Grow Your Company", description: "With us your company's growth will reach new heights", image: "/src/assets/growth.png"},
+        {id: 1, title: "Create Your Presence On Web", description: "With us you can make your web presence easily", image: "/src/assets/img1.png"},
+        {id: 2, title: "Maintain And Update Your Site", description: "With us your site will be maintained and updated Always", image:"/src/assets/img2.png"},
+        {id: 3, title: "Grow Your Company", description: "With us your company's growth will reach new heights", image: "/src/assets/img3.png"},
     ]
 return (
     <div className = 'md:px-14 px-4 py-16 max-w-screen-2xl mx-auto' id='service'>
