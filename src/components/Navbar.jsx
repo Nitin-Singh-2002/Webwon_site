@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import logo2 from "../assets/logo2.png";
 import { FaXmark, FaBars} from "react-icons/fa6";
 
+
 const Navbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
     const [sticky, setSticky] = useState(false);
@@ -52,7 +53,7 @@ const Navbar = () => {
 
     return (
         <header className='w-full bg-white md:bg-transparent fixed top-0 left-0 right-0'>
-            <nav className = {`py-4 lg:px-14 px-4 ${sticky ? "sticky top-0 left-0 right-0 bg-white duration-300" : ""}`}>
+            <nav className = {`py-4 lg:px-14 px-4 ${sticky ? "sticky top-0 left-0 right-0 bg-white duration-300" : ""}`} >
                 <div className = "flex justify-between items-center text-base gap-8">
                     <a
                         href="#"
@@ -81,7 +82,6 @@ const Navbar = () => {
             </li>
             ))}
         </ul>
-        
 
         {/* btn for large devices */}
 

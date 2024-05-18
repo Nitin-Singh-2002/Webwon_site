@@ -2,9 +2,11 @@ import React from 'react'
 import logo2 from "../assets/logo2.png";
 import { Footer } from "flowbite-react";
 import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import { Slide } from 'react-awesome-reveal';
 
 const Myfooter = () => {
 return (
+    <Slide direction='up'>
     <Footer container>
     <div className="w-full">
     <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
@@ -63,6 +65,7 @@ return (
     </div>
     </div>
 </Footer>
+</Slide>
 )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Carousel } from 'flowbite-react';
-import { Avatar, Blockquote } from "flowbite-react";
+import { Blockquote } from "flowbite-react";
 
 const Testimonial = () => {
 return (
