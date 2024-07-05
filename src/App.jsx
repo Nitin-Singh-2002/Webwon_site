@@ -1,4 +1,5 @@
 import './App.css';
+import Animation from "./components/Animation"
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Services from "./components/Services";
@@ -11,7 +12,8 @@ function App() {
 
   return (
     <>
-    <Navbar />
+    <Animation/>
+    <Navbar/>
     <Home/>
     <Services/>
     <About/>

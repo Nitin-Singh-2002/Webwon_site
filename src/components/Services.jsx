@@ -5,15 +5,16 @@ import Uber from '../assets/uber.svg'
 import Hp from '../assets/hp.svg'
 import Swiggy from '../assets/swiggy.svg'
 import Lamborghini from '../assets/lamborghini.svg'
+import Img1 from '../assets/img1.png'
+import Img2 from '../assets/img2.png'
+import Img3 from '../assets/img3.png'
 import { Fade, Slide, Zoom } from "react-awesome-reveal"
 
 
 const Services = () => {
-    const services = [
-        {id: 1, title: "Create Your Presence On Web", description: "With us you can make your web presence easily", image: "/src/assets/img1.png"},
-        {id: 2, title: "Maintain And Update Your Site", description: "With us your site will be maintained and updated Always", image:"/src/assets/img2.png"},
-        {id: 3, title: "Grow Your Company", description: "With us your company's growth will reach new heights", image: "/src/assets/img3.png"},
-    ]
+        // {id: 1, title: "Create Your Presence On Web", description: "With us you can make your web presence easily", image: "/src/assets/img1.png"},
+        // {id: 2, title: "Maintain And Update Your Site", description: "With us your site will be maintained and updated Always", image:"/src/assets/img2.png"},
+        // {id: 3, title: "Grow Your Company", description: "With us your company's growth will reach new heights", image: "/src/assets/img3.png"},
 return (
     <div className = 'md:px-14 px-4 py-16 max-w-screen-2xl mx-auto' id='service'>
         <Fade cascade damping={0.1}>
@@ -44,16 +45,34 @@ return (
 
         <Zoom>
         <div className = 'mt-14 grid lg:grid-cols-3 md:grid-cols-1 md:w-11/12 mx-auto gap-12'>
-            {
-            services.map(service => <div key={service.id} className = 'px-4 py-8 tex-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 flex items-center justify-center h-full'>
+            
+            <div className = 'px-4 py-8 tex-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 flex items-center justify-center h-full'>
                             <div>
-                                <div className = 'mb-4 h-15 w-15 max-auto rounded-tl-3xl rounded-br-3xl items-center'><img src={service.image} alt = "" className = ' m-auto w-52 '/>
-                                <h4 className = 'text-2xl font-bold text-gray-800 mb-2 px-2'>{service.title}</h4>
-                                <p className = 'text-sm text-gray-800'>{service.description}</p>
+                                <div className = 'mb-4 h-15 w-15 max-auto rounded-tl-3xl rounded-br-3xl items-center'><img src={Img1} alt = "Img1" className = ' m-auto w-52 '/>
+                                <h4 className = 'text-2xl font-bold text-gray-800 mb-2 px-2'>Create Your Presence On Web</h4>
+                                <p className = 'text-sm text-gray-800'>With us you can make your web presence easily</p>
                                 </div>
                             </div>
-                    </div> )
-            }
+            </div>
+            
+            <div className = 'px-4 py-8 tex-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 flex items-center justify-center h-full'>
+                            <div>
+                                <div className = 'mb-4 h-15 w-15 max-auto rounded-tl-3xl rounded-br-3xl items-center'><img src={Img2} alt = "Img2" className = ' m-auto w-52 '/>
+                                <h4 className = 'text-2xl font-bold text-gray-800 mb-2 px-2'>Maintain And Update Your Site</h4>
+                                <p className = 'text-sm text-gray-800'>With us your site will be maintained and updated Always</p>
+                                </div>
+                            </div>
+            </div>
+            
+            <div className = 'px-4 py-8 tex-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 flex items-center justify-center h-full'>
+                            <div>
+                                <div className = 'mb-4 h-15 w-15 max-auto rounded-tl-3xl rounded-br-3xl items-center'><img src={Img3} alt = "Img3" className = ' m-auto w-52 '/>
+                                <h4 className = 'text-2xl font-bold text-gray-800 mb-2 px-2'>Grow Your Company</h4>
+                                <p className = 'text-sm text-gray-800'>With us your company growth will reach new heights</p>
+                                </div>
+                            </div>
+            </div>
+
         </div>
         </Zoom>
     </div>
